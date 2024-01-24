@@ -10,40 +10,71 @@
 
 <body>
     <header>
-        <div>Select Date</div>
-        <input type="date">
-        <button>Search</button>
+        <div>Select a Date:</div>
+        <input type="date" id="date">
+        <button class="btn">Search</button>
+        <button id="avg">Fetch</button>
     </header>
+    <form>
+
+        <div class="inputs">
+            <span id="1">Karthik</span>
+            <label>
+                <input type="radio" name="karthik" value="present"> Present
+            </label>
+            <label>
+                <input type="radio" name="karthik" value="absent"> Absent
+            </label>
+        </div>
+
+        <div class="inputs">
+            <span id="2">Ravi</span>
+            <label>
+                <input type="radio" name="ravi" value="present"> Present
+            </label>
+            <label>
+                <input type="radio" name="ravi" value="absent"> Absent
+            </label>
+        </div>
+
+        <div class="inputs">
+            <span id="3">Ram</span>
+            <label>
+                <input type="radio" name="ram" value="present"> Present
+            </label>
+            <label>
+                <input type="radio" name="ram" value="absent"> Absent
+            </label>
+        </div>
+
+        <div class="inputs">
+            <span id="4">Mouli</span>
+            <label>
+                <input type="radio" name="mouli" value="present"> Present
+            </label>
+            <label>
+                <input type="radio" name="mouli" value="absent"> Absent
+            </label>
+        </div>
+
+        <div class="inputs">
+            <span id="5">Shyam</span>
+            <label>
+                <input type="radio" name="shyam" value="present"> Present
+            </label>
+            <label>
+                <input type="radio" name="shyam" value="absent"> Absent
+            </label>
+        </div>
+
+        <input type="submit" value="Submit">
+
+    </form>
     <div class="student-list">
-        <form action="process_form.php" method="post">
-            <label>
-                Ravi:
-                <input type="radio" name="student1" value="present"> Present
-                <input type="radio" name="student1" value="absent"> Absent
-            </label></br>
 
-            <label>
-                karthik:
-                <input type="radio" name="student2" value="present"> Present
-                <input type="radio" name="student2" value="absent"> Absent
-            </label><br>
-
-            <label>
-                Ram:
-                <input type="radio" name="student2" value="present"> Present
-                <input type="radio" name="student2" value="absent"> Absent
-            </label><br>
-
-            <label>
-                Krithi:
-                <input type="radio" name="student2" value="present"> Present
-                <input type="radio" name="student2" value="absent"> Absent
-            </label><br>
-
-            <input type="submit" value="Submit">
-
-        </form>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
